@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+<script type="text/javascript" src="https://github.com/rubyeffect/easy_fill/tree/master/lib/easy_fill-0.0.1.min.js"></script>
+  <title>Claim</title>
+  <link rel="stylesheet" type="text/css" href="claimstyle.css" />
+</head>
+<title>Bahrain Public Hospital</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Bahrain Public Hospital</div>
+      <div class="nav-items">
+        <a href="index.html">HOME</a> <a href="appointment.html">APPOINTMENT</a> <a href="contact.html">CONTACT</a> <a href="claim.html">CLAIM INSURANCE</a> <a href="faq.html">FAQ</a>
+      </div>
+    </nav>
+<body>
+  <div id="container">
+    <!--This is a division tag for body container-->
+    <div id="body_header">
+      <!--This is a division tag for body header-->
+      <h1>Claim Insurance</h1>
+      <p>Please fill the claim details below:</p>
+
+    </div>
+    <form action="thankyou.html" method="post">
+      <fieldset>
+
+        <label for="name">Patient Name*:</label>
+        <input type="text" id="name" name="user_name" placeholder="Type patient Name" required pattern="[a-zA-Z0-9]+">
+
+        <label for="mail">Email*:</label>
+        <input type="email" id="mail" name="user_email" placeholder="abc@xyz.com" required>
+
+        <label for="tel">Mobile Number:</label>
+        <input type="tel" id="tel" placeholder="Mobile No." name="user_num">
+               
+
+      <fieldset>
+        <label for="Claim_for">Hospital Name*:</label>
+        <select id="Claim_for" name="Claim_for" required>
+          <option value="coffee">Royal Bahrain Hospital</option>
+          <option value="meeting">Middle East Hospital</option>
+          <option value="Business">KIMS Health Hospital</option>
+          <option value="lunch">Bahrain Specialist Hospital</option>
+          <option value="skype">American Mission Hospital</option>
+          <option value="movie">Al Hilal Hospital</option>
+          <option value="couple_date">Salmaniya Hospital</option>
+        </select>
+        <label for="Claim_description">Claim Description:</label>
+        <textarea id="Claim_description" name="Claim_description" placeholder="I wish to get my clam cleared ASAP."></textarea>
+        <label for="date">Claim Date*:</label>
+        <input type="date" name="date" value="" required></input>
+        <br>
+        
+      </fieldset>
+      <button type="submit">Submit Claim</button>
+    </form>
+  </div>
+</body>
+
+</html>
